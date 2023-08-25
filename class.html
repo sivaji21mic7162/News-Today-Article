@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Article</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Apply background color to the header and center its content */
+        .header {
+            background-color: #333;
+            text-align: center;
+            padding: 1rem;
+            color: white;
+        }
+        
+        /* Apply background color to the main content and create columns */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+            background-color: #f4f4f4;
+        }
+        
+        /* Style individual columns */
+        .column {
+            flex: 1;
+            background-color: white;
+            padding: 1rem;
+            margin: 0 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Style the images */
+        .column img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px 5px 0 0;
+        }
+        
+        /* Additional styling for column content */
+        .column p {
+            margin-top: 10px;
+        }
+        
+        /* Style the footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        
+        /* Style the top section of the footer */
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        /* Style the social media icons */
+        .social-media a {
+            margin-right: 10px;
+        }
+        
+        .social-media img {
+            width: 25px;
+            height: 25px;
+        }
+        
+        /* Style the footer navigation */
+        .footer-nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        .footer-nav li {
+            margin-right: 15px;
+        }
+        
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Style the bottom section of the footer */
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #555;
+            padding-top: 10px;
+            font-size: 12px;
+        }
+        
+        /* Media query for responsiveness */
+        @media screen and (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .column {
+                margin: 1rem 0;
+            }
+        }
+        
+        /* Style the main navigation */
+        .main-nav {
+            text-align: center;
+            background-color: #555;
+            padding: 10px;
+        }
+        
+        .main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main-nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+        
+        .main-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .main-nav a:hover {
+            color: #ff9900;
+        }
+        
+        /* Style the header bottom */
+        .header-bottom {
+            text-align: center;
+            padding: 20px;
+            background-color: #444;
+        }
+        
+        .header-bottom h1 {
+            color: white;
+            margin-bottom: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="logo"></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Opinion</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <h1>News Today India</h1>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="column">
+            <img src="ROVER-1.webp" alt="Image 1">
+            <p>The Chandrayaan-3 rover has covered a distance of 8 metres on the lunar surface and the two science experiments it was carrying have been switched on, the Indian Space Research Organisation (ISRO) confirmed on Friday evening. The rover is capable of travelling a total distance of 500 metres.</p>
+        </div>
+        <div class="column">
+            <img src="Railway.webp" alt="Image 2">
+            <p>HYDERABAD: The city boasts of both the Multi-Modal Transport System (MMTS) and Hyderabad Metro Rail services, which, ironically, makes for a study in contrast that borders on agony and ecstasy.
+
+                MMTS, despite being the cheapest travel mode (the fare starts at Rs 5.</p>
+        </div>
+        <div class="column">
+            <img src="Sebi.avif" alt="Image 3">
+            <p>Capital markets regulator SEBI on Friday informed the Supreme Court that it has completed the probe in all but two allegations against the Adani group and is still awaiting information from five tax havens on actual owners behind foreign investors investing in the conglomerate.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 News Today India Article</p>
+        </div>
+    </footer>
+</body>
+</html>
+
